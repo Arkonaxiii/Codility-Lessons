@@ -1,3 +1,3 @@
 # Codility-Lessons
 my solutions to codility lessons
-test test test test
+tutaj zmieniłam tekst na inny i co teraz ???
