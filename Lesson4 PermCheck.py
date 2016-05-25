@@ -1,5 +1,4 @@
 def solution(A):
-
     result = 0
 
     for index in range(len(A)):
