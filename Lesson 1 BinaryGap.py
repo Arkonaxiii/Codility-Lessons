@@ -10,7 +10,7 @@ def solution(N):
         if digit == "1":
             if temp > longest:
                 longest = temp
-                temp = 0
+            temp = 0
         else:
             temp += 1      
     return longest
