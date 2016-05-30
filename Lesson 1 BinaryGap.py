@@ -1,15 +1,17 @@
 def solution(N):
-    s = str(bin(N))[2:]  # string z wersji binarnej bez dwoch pierwszych elementów
-
-    length = len(s)
-    gaplen = 0
+    
+    B = bin(N)[2:]
     longest = 0
-
-    for element in s:
-        if element == "0":
-            gaplen += 1
+    temp = 0
+    
+    for digit in B:
+        print digit
+        if digit == "1":
+            if temp > longest:
+                longest = temp
+            temp = 0
         else:
-            if gaplen > longest:
-                longest = gaplen  # nie przejmuje się jedynką na końcu bo zawsze jest jedynka na końcu?
-            gaplen = 0
+            temp += 1
+    if temp > longest:
+        longest = temp       
     return longest
