@@ -7,7 +7,6 @@ def solution(N):
     temp = 0
     
     for digit in B:
-        print digit
         if digit == "1":
             if temp > longest:
                 longest = temp
