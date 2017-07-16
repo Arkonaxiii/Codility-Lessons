@@ -13,3 +13,20 @@ def solution(A):
             last += 1           
             
     return last+1
+
+# lub
+
+def solution(A):
+    
+    if len(A) == 0:
+        return 0
+        
+    S = sorted(A)
+    counter = 1
+    last = S[0]
+    
+    for number in S:
+        if number > last:
+            counter += 1
+            last = number
+    return counter
