@@ -5,8 +5,8 @@ def solution(A):
     for element in A:
         if element == 0:
             zeros += 1
-        if element == 1:
-            passed = passed + zeros
+        else:
+            passed += zeros
             if passed > 1000000000:
                 return -1
     return passed
