@@ -1,0 +1,15 @@
+def solution(H):
+    stack = []
+    block_count = 0
+    
+    for height in H:
+        while len(stack) != 0 and height < stack[-1]:
+            block_count += 1
+            stack.pop()
+        if len(stack) == 0 or height > stack[-1]:
+            stack.append(height)
+    return block_count + len(stack)
+    
+    #jeśli element jest mniejszy niż osatni na stosie - odetnij blok
+    # jeśli element jet większy niż ostatni na stosie - dodaj go do stosu
+    # wynik: odcięte bloki + długość stosu
