@@ -12,4 +12,4 @@ def solution(H):
     
     #jeśli element jest mniejszy niż osatni na stosie - odetnij blok
     # jeśli element jet większy niż ostatni na stosie - dodaj go do stosu
-    # wynik: odcięte bloki + długość stosu
+    # wynik: odcięte bloki + długość stosu 
